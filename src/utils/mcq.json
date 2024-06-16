@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "question_number": "Q1",
+    "question": "Which of the following is a programming language?",
+    "options": [
+      { "option_id": "Q1A", "option_name": "HTML" },
+      { "option_id": "Q1B", "option_name": "CSS" },
+      { "option_id": "Q1C", "option_name": "Python" },
+      { "option_id": "Q1D", "option_name": "Photoshop" }
+    ],
+    "answer": "Q1C"
+  },
+  {
+    "id": 2,
+    "question_number": "Q2",
+    "question": "What does HTML stand for?",
+    "options": [
+      { "option_id": "Q2A", "option_name": "Hyper Text Markup Language" },
+      { "option_id": "Q2B", "option_name": "Home Tool Markup Language" },
+      {
+        "option_id": "Q2C",
+        "option_name": "Hyperlinks and Text Markup Language"
+      },
+      { "option_id": "Q2D", "option_name": "None of these" }
+    ],
+    "answer": "Q2A"
+  },
+  {
+    "id": 3,
+    "question_number": "Q3",
+    "question": "Which company developed the Java programming language?",
+    "options": [
+      { "option_id": "Q3A", "option_name": "Microsoft" },
+      { "option_id": "Q3B", "option_name": "Apple" },
+      { "option_id": "Q3C", "option_name": "Sun Microsystems" },
+      { "option_id": "Q3D", "option_name": "Google" }
+    ],
+    "answer": "Q3C"
+  }
+]
