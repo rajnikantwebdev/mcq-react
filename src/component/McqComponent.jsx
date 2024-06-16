@@ -109,13 +109,6 @@ const McqComponent = () => {
             Please click me to enable fullscreen mode to take the quiz.
           </span>
         </button>
-        {/* <button
-          onClick={requestFullscreen}
-          className="bg-thirty px-2 py-1 rounded-md
-         text-white my-4"
-        >
-          Enable Fullscreen
-        </button> */}
       </Modal>
 
       {isFullscreen && (
@@ -153,6 +146,7 @@ const McqComponent = () => {
               Previous
             </button>
             <button
+              disabled={currentSelectedOption === null}
               className="bg-thirty text-white px-3 py-1"
               onClick={() => handleNext(currentQuestion.answer)}
             >
