@@ -7,9 +7,9 @@ const ResultPage = () => {
   );
 
   const getResultMessage = (result) => {
-    if (result > 0 && result < 4) {
+    if (result >= 0 && result <= 4) {
       return "😔";
-    } else if (result >= 4 && result < 7) {
+    } else if (result > 4 && result <= 7) {
       return "😐";
     } else {
       return "🤩";

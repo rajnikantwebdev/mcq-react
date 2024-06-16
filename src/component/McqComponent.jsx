@@ -9,7 +9,6 @@ import {
   loadFromLocalStorage,
 } from "../utils/handleFormReload";
 import { useNavigate } from "react-router-dom";
-import { exitFullscreen } from "../utils/exitFullScreen";
 
 Modal.setAppElement("#root");
 
@@ -25,8 +24,12 @@ const McqComponent = () => {
   const [totalRightAns, setTotalRightAns] = useState(
     loadFromLocalStorage("total") || 0
   );
+  const [validatedQuestions, setValidatedQuestions] = useState(
+    loadFromLocalStorage("validatedQuestions") || []
+  );
+
   const { time } = useContext(TimeContext);
-  const { isFullscreen, requestFullscreen } = useFullScreen();
+  const { isFullscreen, requestFullscreen, exitFullscreen } = useFullScreen();
 
   const currentQuestion = quiz[currentQuizId];
   const currentSelectedOption = selectedOptions[currentQuizId] || null;
@@ -39,9 +42,22 @@ const McqComponent = () => {
   };
 
   const handleNext = async (rightAnswer) => {
-    await handleAnswerValidation(rightAnswer, selectedOptions[currentQuizId], {
-      setTotalRightAns,
-    });
+    // Check if the current question has already been validated
+    if (!validatedQuestions[currentQuizId]) {
+      await handleAnswerValidation(
+        rightAnswer,
+        selectedOptions[currentQuizId],
+        {
+          setTotalRightAns,
+        }
+      );
+
+      // Mark the current question as validated
+      const newValidatedQuestions = [...validatedQuestions];
+      newValidatedQuestions[currentQuizId] = true;
+      setValidatedQuestions(newValidatedQuestions);
+      saveToLocalStorage("validatedQuestions", newValidatedQuestions);
+    }
 
     if (quiz.length - 1 === currentQuizId) {
       exitFullscreen();

@@ -37,5 +37,90 @@
       { "option_id": "Q3D", "option_name": "Google" }
     ],
     "answer": "Q3C"
+  },
+
+  {
+    "id": 4,
+    "question_number": "Q4",
+    "question": "Which of the following is a JavaScript framework?",
+    "options": [
+      { "option_id": "Q4A", "option_name": "Django" },
+      { "option_id": "Q4B", "option_name": "React" },
+      { "option_id": "Q4C", "option_name": "Flask" },
+      { "option_id": "Q4D", "option_name": "Laravel" }
+    ],
+    "answer": "Q4B"
+  },
+  {
+    "id": 5,
+    "question_number": "Q5",
+    "question": "Which language is primarily used for styling web pages?",
+    "options": [
+      { "option_id": "Q5A", "option_name": "HTML" },
+      { "option_id": "Q5B", "option_name": "JavaScript" },
+      { "option_id": "Q5C", "option_name": "CSS" },
+      { "option_id": "Q5D", "option_name": "Python" }
+    ],
+    "answer": "Q5C"
+  },
+  {
+    "id": 6,
+    "question_number": "Q6",
+    "question": "Which of the following is a back-end language?",
+    "options": [
+      { "option_id": "Q6A", "option_name": "Angular" },
+      { "option_id": "Q6B", "option_name": "Node.js" },
+      { "option_id": "Q6C", "option_name": "Vue.js" },
+      { "option_id": "Q6D", "option_name": "React" }
+    ],
+    "answer": "Q6B"
+  },
+  {
+    "id": 7,
+    "question_number": "Q7",
+    "question": "Which language is used for data analysis and machine learning?",
+    "options": [
+      { "option_id": "Q7A", "option_name": "Ruby" },
+      { "option_id": "Q7B", "option_name": "Python" },
+      { "option_id": "Q7C", "option_name": "PHP" },
+      { "option_id": "Q7D", "option_name": "Java" }
+    ],
+    "answer": "Q7B"
+  },
+  {
+    "id": 8,
+    "question_number": "Q8",
+    "question": "What does CSS stand for?",
+    "options": [
+      { "option_id": "Q8A", "option_name": "Cascading Style Sheets" },
+      { "option_id": "Q8B", "option_name": "Computer Style Sheets" },
+      { "option_id": "Q8C", "option_name": "Creative Style Sheets" },
+      { "option_id": "Q8D", "option_name": "Colorful Style Sheets" }
+    ],
+    "answer": "Q8A"
+  },
+  {
+    "id": 9,
+    "question_number": "Q9",
+    "question": "Which of the following is not a programming paradigm?",
+    "options": [
+      { "option_id": "Q9A", "option_name": "Object-Oriented" },
+      { "option_id": "Q9B", "option_name": "Functional" },
+      { "option_id": "Q9C", "option_name": "Procedural" },
+      { "option_id": "Q9D", "option_name": "Reactive" }
+    ],
+    "answer": "Q9D"
+  },
+  {
+    "id": 10,
+    "question_number": "Q10",
+    "question": "Which company maintains the React library?",
+    "options": [
+      { "option_id": "Q10A", "option_name": "Google" },
+      { "option_id": "Q10B", "option_name": "Facebook (Meta)" },
+      { "option_id": "Q10C", "option_name": "Microsoft" },
+      { "option_id": "Q10D", "option_name": "Twitter" }
+    ],
+    "answer": "Q10B"
   }
 ]

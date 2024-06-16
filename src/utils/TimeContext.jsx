@@ -6,7 +6,7 @@ const Reducer = ({ children }) => {
   const [time, setTime] = useState(() => {
     // Retrieve the saved time from localStorage
     const savedTime = localStorage.getItem("remainingTime");
-    return savedTime !== null ? parseInt(savedTime, 10) : 30; // Default to 10 minutes if not found
+    return savedTime !== null ? parseInt(savedTime, 10) : 600; // Default to 10 minutes if not found
   });
 
   return (
